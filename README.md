@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.3/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+function setup() {
+  createCanvas(600, 600);
+  background("blue");
+}
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
-</html>
+function draw() {
+  stroke("blue");
+  fill("red");
+
+  // console.log(mouseIsPressed)
+
+  if (mouseIsPressed) {
+    rect(mouseX, mouseY, 20, 35);
+  }
+}
+
